@@ -33,21 +33,38 @@
       &_mobile
         display: none
 .menu-mobile
-  width: 16px
-  height: 11px
-  padding: 0
-  border: none
   display: none
-  // display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: space-between
-  background-color: $color-background-white
-  cursor: pointer
+  justify-content: center
+  // background: $color-background-light
+  &__button
+    width: 16px
+    height: 11px
+    padding: 0
+    border: none
+    display: none
+    // display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    background-color: $color-background-white
+    cursor: pointer
   &__line
     width: 16px
     height: 1px
     background-color: #3A4C66
-
-
-
+  &__list
+    padding: 0
+  &__item
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    margin: 0
+    list-style: none
+    text-align: center
+    margin-bottom: 20px
+  &__proposal
+    background-color: $color-background-white
+    color: $color-text-blue
+    border: 2px solid $color-text-blue
+    border-radius: 8px
+    padding: 13px 34px
