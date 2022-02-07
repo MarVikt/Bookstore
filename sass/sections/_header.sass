@@ -1,28 +1,53 @@
-.header 
-	width: 100% 
-	background: $color-background-white
-	&__content 
-		display: flex
+.header
+  width: 100%
+  background-color: $color-background-white
+  padding-top: 37px
+  padding-bottom: 95px
+  &__content
+    display: flex
     align-items: center
   &__logo-img
     width: 90px
     height: 28px
-	&__menu
+  &__button
+    background-color: $color-background-white
+    color: $color-text-blue
+    border: 2px solid $color-text-blue
+    border-radius: 8px
+    padding: 13px 34px
+  &__menu
+    margin-left: auto
+    margin-right: 63px
     &-list
       padding: 0
       display: flex
-      flex-direction: raw
+      flex-direction: row
       justify-content: space-between
-      min-width: 283px
-      &-item
+      min-width: 254px
+    &-item
       font-weight: 600
       font-size: 16px
       line-height: 22px
       margin: 0
       list-style: none
-  &__button
-    background: $color-background-white
-    color: $color-text-blue
-    border: 2px solid $color-text-blue
-    border-radius: 8px
-    padding: 13px 27px
+      &_mobile
+        display: none
+.menu-mobile
+  width: 16px
+  height: 11px
+  padding: 0
+  border: none
+  display: none
+  // display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  background-color: $color-background-white
+  cursor: pointer
+  &__line
+    width: 16px
+    height: 1px
+    background-color: #3A4C66
+
+
+
