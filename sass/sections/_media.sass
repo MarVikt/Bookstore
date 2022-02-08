@@ -19,9 +19,21 @@
 // --------------------------------------------------
 @media (max-width: 1060px)
   .about-book
+    &__title
+      margin-top: 0
+    &__announcement
+      margin-bottom: 20px
     &__img
       width: 196px
       height: 295px
+    &__buttons
+      width: 55%
+      display: flex
+      flex-direction: column
+      justify-content: center
+    &__buy
+      margin-right: 0
+      margin-bottom: 20px
 
 // --------------------------------------------------
 @media (hover: hover) and (min-width: 992px)
@@ -35,7 +47,24 @@
 
   
 // --------------------------------------------------
-// @media (max-width: 860px)
+@media (max-width: 860px)
+  .about-book
+    flex-direction: column
+    align-items: center
+    &__title
+      width: 100%
+    &__announcement
+      width: 100%
+    &__description
+      width: 100%
+    &__buttons
+      width: 71%
+      flex-direction: row
+      margin-bottom: 25px
+    &__buy
+      margin-right: 26px
+      margin-bottom: 0  
+
 
 // --------------------------------------------------
 @media (max-width: 767px)
