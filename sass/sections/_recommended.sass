@@ -1,4 +1,7 @@
+.other-books
+  padding-top: 71px
 .recommended
+  width: 65.61%
   &__title
     font-family: Roboto Condensed
     font-style: normal
@@ -6,17 +9,18 @@
     font-size: 32px
     line-height: 40px
     letter-spacing: 0.2px
+    margin-bottom: 29px
   &__content
     display: grid
     grid-template-rows: min-content min-content min-content
-    grid-template-columns: 40% 40%
+    grid-template-columns: 47.86% 47.86%
     column-gap: 32px
-    row-gap: 32px
+    row-gap: 34px
   &__item
     display: flex
     border: 1px solid #ECEEF2
     border-radius: 8px
-    padding: 11px
+    padding: 11px 11px 0 11px
   &__book
     margin-right: 20px
   &__img
@@ -27,3 +31,31 @@
   &__attribute
     display: flex
     flex-direction: column
+    justify-content: center
+  &__name
+    margin: 0
+    margin-bottom: 15px
+  &__category
+    margin-bottom: 25px
+  &__price
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    color: $color-text-blue
+    margin-bottom: 25px
+  &__choice
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+  &__buy
+    font-weight: bold
+    padding: 9px 20px
+    background: $color-background-dark
+    border-radius: 2000px
+    margin-right: 20px
+  &__heart
+    width: 18px
+    height: 21px
