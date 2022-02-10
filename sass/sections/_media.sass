@@ -1,7 +1,8 @@
 @media (max-width: 1960px)
   .boundaries
     width: 79.17%
-      
+  .best__content
+    height: 942px
 
 // --------------------------------------------------
 @media (max-width: 1400px)
@@ -19,10 +20,7 @@
       margin-bottom: 15px
   .best
     &__content
-      row-gap: 55px
-    &__item
-      &:nth-child(n+4)
-        display: none
+      height: 796px
     &__img
       width: 80px
       height: 120px
@@ -58,6 +56,8 @@
       font-size: 14px
       margin-right: 10px
   .best
+    &__content
+      height: 790px
     &__name
       font-size: 18px
     &__buy
@@ -93,19 +93,22 @@
   .recommended
     width: 47%
     &__content
-      grid-template-rows: repeat(6,min-content)
+      grid-template-rows: repeat(3,min-content)
       grid-template-columns: 1fr
       column-gap: 0
-      row-gap: 32px
+      row-gap: 19px
     &__item
       padding: 11px
+    &__fade
       &:nth-child(n+4)
         display: none
   .best
     width: 47%
-    &__item
-      &:nth-child(4)
-        display: flex
+    &__content
+      height: 791px
+    // &__item
+    //   &:nth-child(4)
+    //     display: none
 
 
 // --------------------------------------------------
@@ -162,17 +165,81 @@
     overflow-y: auto
     &_visible
       display: block
+  .other-books
+    flex-direction: column
+    padding-top: 28px
   .recommended
     width: 100%
+    text-align: center
+    margin-bottom: 42px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 72px
     &__content
       grid-template-rows: repeat(3,min-content)
       grid-template-columns: 1fr
       row-gap: 7px
     &__item
-      padding: 11px
+      padding: 11px 11px 20px 11px
+    &__img
+      width: 96px
+      height: 137px
+    &__attribute
+      align-items: center
+    &__name
+      width: 243px
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 12px
+    &__category
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 16px
+    &__price
+      font-size: 16px
+      line-height: 20px
+      margin-bottom: 20px
+    &__buy
+      font-size: 16px
+      line-height: 22px
+      padding: 7px 26px
+      margin-right: 19px
   .best
-    display: none
-
+    width: 100%
+    text-align: center
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 36px
+    &__item
+      padding: 26px 22px 0 10px
+      &:nth-child(n+4)
+        display: flex
+    &__book
+      margin-right: 14px
+    &__img
+      width: 96px
+      height: 142px
+    &__attribute
+      align-items: start
+    &__name
+      width: 108px
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      text-align: start
+      font-size: 16px
+      line-height: 24px
+      margin-bottom: 12px
+    &__price
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 14px
+    &__buy
+      font-size: 16px
+      line-height: 22px
+      padding: 7px 20px
 
 
 
@@ -198,11 +265,6 @@
       font-size: 16px
       line-height: 22px
       padding: 8px 28px
-  .best
-    &__content
-      grid-template-rows: repeat(4,min-content)
-      grid-template-columns: 100%
-      row-gap: 7px
 
 
 
@@ -248,3 +310,22 @@
       margin-bottom: 15px
     &__buy
       margin-bottom: 14px
+  .recommended
+    &__content
+      margin-bottom: 9px
+    &__fade
+      &:nth-child(n+2)
+        display: none
+    &__item
+      flex-direction: column
+    &__book
+      margin: -36px 0 14px 0
+    &__more
+      font-size: 16px
+      line-height: 20px
+      text-transform: none
+      padding-top: 14px
+      padding-bottom: 14px
+      margin: 0
+
+
