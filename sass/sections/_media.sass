@@ -20,7 +20,8 @@
       height: 160px
     &__name
       font-size: 20px
-      margin-bottom: 0
+      &-box
+        margin-bottom: 0
     &__category
       font-size: 14px
       margin-bottom: 15px
@@ -144,7 +145,7 @@
   .category__ref
     &:hover
       text-decoration: none
-      
+
 
   
 // --------------------------------------------------
@@ -227,9 +228,14 @@
       margin-bottom: 72px
     &__content
       grid-template-rows: repeat(3,min-content)
-      grid-template-columns: 1fr
+      grid-template-columns: 1fr 1fr
       row-gap: 7px
+      column-gap: 7px
+    &__fade
+      &:nth-child(n+4)
+        display: block
     &__item
+      flex-direction: column
       padding: 11px 11px 20px 11px
     &__img
       width: 96px
@@ -237,10 +243,11 @@
     &__attribute
       align-items: center
     &__name
-      width: 243px
       font-size: 20px
       line-height: 24px
-      margin-bottom: 12px
+      &-box
+        height: 48px
+        margin-bottom: 12px
     &__category
       font-size: 14px
       line-height: 20px
@@ -257,12 +264,18 @@
   .best
     width: 100%
     text-align: center
+    &__content
+      height: 500px
+      flex-direction: row
+      flex-wrap: wrap
     &__title
       font-size: 28px
       line-height: 36px
       margin-bottom: 36px
     &__item
-      padding: 26px 22px 0 10px
+      // width: 45%
+      // flex-direction: column
+      padding: 26px 5px 0 5px
       &:nth-child(n+4)
         display: flex
     &__book
@@ -289,6 +302,8 @@
       font-size: 16px
       line-height: 22px
       padding: 7px 20px
+    &__more
+      flex-basis: 100%
 
 
 
@@ -314,8 +329,13 @@
       font-size: 16px
       line-height: 22px
       padding: 8px 28px
-
-
+  .best
+    &__content
+      height: auto
+      justify-content: center
+    &__item
+      flex-direction: column
+      padding: 26px
 
 // --------------------------------------------------
 @media (max-width: 549px)
@@ -362,12 +382,14 @@
   .recommended
     margin-bottom: 27px
     &__content
+      grid-template-rows: min-content
+      grid-template-columns: 1fr
+      row-gap: 0
+      column-gap: 0
       margin-bottom: 9px
     &__fade
       &:nth-child(n+2)
         display: none
-    &__item
-      flex-direction: column
     &__book
       margin: -36px 0 14px 0
     &__more
@@ -382,6 +404,7 @@
       padding: 0 0 20px 0
       height: 803px
     &__item
+      flex-direction: row
       padding: 26px 22px 4px 10px
     &__line
       width: 240px
