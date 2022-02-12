@@ -160,12 +160,12 @@
     &__description
       width: 100%
   .category
-    &__wrapper
-      flex-wrap: wrap
+    // &__wrapper
+    //   flex-wrap: wrap
     &__item
-      width: 36.75vw
-      min-height: 182px
-      height: 182px
+      width: 18.4vw
+      min-height: 202px
+      height: 202px
       margin-bottom: 10px
     &__img
       width: 36px
@@ -273,7 +273,7 @@
       line-height: 36px
       margin-bottom: 36px
     &__item
-      // width: 45%
+      width: 45%
       // flex-direction: column
       padding: 26px 5px 0 5px
       &:nth-child(n+4)
@@ -304,6 +304,9 @@
       padding: 7px 20px
     &__more
       flex-basis: 100%
+  .category
+    &__item
+      width: 23.28vw
 
 
 
@@ -336,6 +339,20 @@
     &__item
       flex-direction: column
       padding: 26px
+    &__attribute
+      align-items: center
+  .category
+    &__item
+      width: 43.75vw
+      padding: 18px 1px 14px 1px
+    &__buttons
+      width: 20%
+      top: auto
+      bottom: 0
+      left: 50%
+      margin-top: 19px
+      transform: translateX(-50%)
+      
 
 // --------------------------------------------------
 @media (max-width: 549px)
@@ -404,20 +421,12 @@
       padding: 0 0 20px 0
       height: 803px
     &__item
+      flex-basis: 100%
       flex-direction: row
+      justify-content: center
       padding: 26px 22px 4px 10px
     &__line
       width: 240px
-  .category
-    &__item
-      width: 43.75vw
-      padding: 18px 1px 14px 1px
-    &__buttons
-      width: 20%
-      top: auto
-      left: 50%
-      margin-top: 19px
-      transform: translateX(-50%)
 
 
 
