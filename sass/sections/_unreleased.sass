@@ -1,10 +1,12 @@
 .unreleased
-  flex-direction: column
-  position: relative
   background: $color-background-dark
   color: $color-text-white
-  padding: 26px 0
+  padding-top: 26px
+  padding-bottom: 78px
   &__content
+    flex-direction: column
+    position: relative
+  &__swiper
     width: 100%
   &__wrapper
     display: flex
@@ -35,14 +37,15 @@
     height: 56px
     display: block
     -webkit-mask-image: url('../img/unreleased-arrow.svg')
+    -webkit-mask-position: center
+    -webkit-mask-repeat: no-repeat
+    -webkit-mask-size: contain
     background-color: $color-text-white
     &--previous
       margin-left: -27px
     &--next
       margin-right: -27px
       transform: rotate(180deg)
-  // &__arrow-left
-  //   stroke: $color-text-white
 .swiper-button-disabled
   background-color: #5A7184
   cursor: auto

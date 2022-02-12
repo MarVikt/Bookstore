@@ -35,22 +35,38 @@ $(document).ready(function() {
     
   });
   
-  var unreleasedSlider = new Swiper('.unreleased__content', {
+  var unreleasedSlider = new Swiper('.unreleased__swiper', {
     // Optional parameters
     direction: 'horizontal',
-    slidesPerView: 2,
-    slidesPerGroup: 2,
     // loop: true,
     // Responsive breakpoints
     breakpoints: {
-      // when window width is >= 641px
-      641: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        // spaceBetween: 20
+      },
+      // when window width is >= 531px
+      531: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        // spaceBetween: 20
+      },
+      // when window width is >= 801px
+      801: {
         slidesPerView: 3,
         slidesPerGroup: 3,
         // spaceBetween: 20
       },
-      // when window width is >= 861px
-      861: {
+      // when window width is >= 1041px
+      1041: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 26
+      },
+      // when window width is >= 1400px
+      1400: {
         slidesPerView: 5,
         slidesPerGroup: 5,
         spaceBetween: 26
