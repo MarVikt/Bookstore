@@ -4,17 +4,20 @@ $(document).ready(function() {
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: 2,
+    slidesPerColumn: 2,
     // loop: true,
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 641px
       641: {
         slidesPerView: 3,
+        slidesPerColumn: 1,
         // spaceBetween: 20
       },
       // when window width is >= 861px
       861: {
         slidesPerView: 4,
+        slidesPerColumn: 1,
         // spaceBetween: 30
       },
     },
