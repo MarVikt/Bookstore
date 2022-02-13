@@ -1,31 +1,83 @@
 .story
-  padding-top: 104px
+  padding-top: 103px
   padding-bottom: 100px
   &__content
     flex-direction: column
+    align-items: center
   &__header
     display: flex
     justify-content: flex-start
+    padding-left: 68px
+    margin-bottom: 22px
   &__title
-    width: 57.48%
+    width: 54.7%
     font-family: Roboto Condensed
     font-style: normal
     font-weight: bold
     font-size: 48px
     line-height: 60px
+    margin: 0
   &__annotation
-    width: 42.52%
+    width: 38%
     font-size: 18px
     line-height: 32px
+    margin: 0
   &__videos
+    width: 88%
     display: grid
     grid-template-rows: min-content min-content
     grid-template-columns: repeat(3, 1fr)
-    column-gap: 34px
-    row-gap: 34px
+    column-gap: 30px
+    row-gap: 25px
   &__one
+    width: 100%
     grid-row: 1 / 2
     grid-column: 1 / 4
+    position: relative
     &-img
+      width: 1005px
+      height: 380px
+      object-fit: cover
+    &-video
+      &-button
+        width: 100px
+        height: 100px
+        position: absolute
+        top: 36%
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 20
+        border-radius: 50%
+        background: $color-background-white
+      &-arrow
+        position: absolute
+        top: 36%
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 20
+  &__item
+    position: relative
+    &-video-arrow
+      fill: $color-text-white
+      position: absolute
+      top: 30%
+      left: 50%
+      transform: translateX(-50%)
+      z-index: 20
+    &-img
+      width: 315px
+      height: 200px
+      object-fit: cover
+    &-name
+      margin: 0
+      margin-top: 18px
+      margin-bottom: 9px
+    &-bottom
+      display: flex
+      justify-content: space-between
+    &-favourite
+      margin-top: 26px
+
+
 
 
