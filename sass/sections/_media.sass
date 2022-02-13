@@ -156,6 +156,17 @@
       font-size: 18px
       line-height: 25px
       margin-left: 6px
+    &__item-name-box
+      height: 64px
+  .partners
+    &__list
+      margin-left: 0
+      grid-template-rows: min-content min-content
+      grid-template-columns: repeat(5, 1fr)
+    &__item
+      &:nth-child(n+11)
+        display: none
+
 
 
 // --------------------------------------------------
@@ -172,7 +183,9 @@
   .category__ref
     &:hover
       text-decoration: none
-
+  .partners__item-img
+    &:hover
+      fill: $color-text-dark
 
   
 // --------------------------------------------------
@@ -214,9 +227,18 @@
     &-name
       font-size: 16px
       line-height: 20px
+      &-box
+        height: 20px
     &-annotation
       font-size: 12px
       line-height: 20px
+  .partners
+    &__list
+      grid-template-rows: min-content min-content
+      grid-template-columns: repeat(4, 1fr)
+    &__item
+      &:nth-child(n+9)
+        display: none
 
 
 // --------------------------------------------------
@@ -436,6 +458,13 @@
     &__button
       width: 48px
       height: 48px
+  .partners
+    &__list
+      grid-template-rows: min-content min-content
+      grid-template-columns: repeat(3, 1fr)
+    &__item
+      &:nth-child(n+7)
+        display: none
       
 
 // --------------------------------------------------
@@ -526,6 +555,7 @@
     height: 424px
   .story
     padding-top: 44px
+    padding-bottom: 41px
     &__videos
       width: 103%
     &__item
@@ -539,11 +569,29 @@
       &-name
         text-align: center
         margin-top: 9px
-        margin-bottom: 4px
+        &-box
+          margin-bottom: 4px
       &-favourite
         width: 10px
         height: 14px
         margin-top: 16px
+  .partners
+    padding-top: 13px
+    padding-bottom: 50px
+    &__title
+      line-height: 30px
+      margin-bottom: 32px
+    &__list
+      width: 83%
+      grid-template-rows: repeat(3, min-content)
+      grid-template-columns: repeat(2, 2fr)
+      column-gap: 13px
+      row-gap: 18px
+      margin-left: 38px
+    &__item-img
+      width: 87px
+      height: 28px
+
 
 
 
