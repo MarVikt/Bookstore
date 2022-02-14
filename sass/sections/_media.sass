@@ -101,7 +101,17 @@
   .unreleased
       &__buttons
         width: 10%
-
+  .registration
+    &__title
+      font-size: 32px
+    &__item
+      width: 350px
+    &__text
+      width: 350px
+      font-size: 16px
+    &__button
+      min-width: 100px
+ 
 
 // --------------------------------------------------
 @media (max-width: 1060px)
@@ -181,7 +191,18 @@
         display: none
   .blog__article-one-title
     font-size: 20px
-
+  .registration
+    &__content
+      flex-direction: column
+      justify-content: space-around
+    &__subscribe
+      width: 88%
+      margin-top: 0
+      margin-left: 0
+    &__title
+      text-align: center
+    &__item
+      margin-right: auto
 
 // --------------------------------------------------
 @media (hover: hover) and (min-width: 992px)
@@ -364,7 +385,6 @@
       margin-bottom: 36px
     &__item
       width: 45%
-      // flex-direction: column
       padding: 26px 5px 0 5px
       &:nth-child(n+4)
         display: flex
@@ -421,6 +441,11 @@
       &-video-arrow
         width: 21px
         height: 27px
+  .registration
+    &__content
+      height: 180px
+    &__title
+      font-size: 24px
 
 
 
@@ -496,6 +521,8 @@
     &__item
       &:nth-child(n+7)
         display: none
+      
+
       
 
 // --------------------------------------------------
@@ -624,7 +651,7 @@
       height: 28px
   .blog
     padding-top: 56px
-    padding-bottom: 50px
+    padding-bottom: 47px
     &__content
       width: 87.5%
     &__header
@@ -686,7 +713,35 @@
         &-ref
           font-size: 10px
           line-height: 20px
-
+  .registration
+    background: $color-text-blue
+    &__content
+      height: 306px
+      justify-content: space-between
+    &__subscribe
+      width: 94.14%
+      margin-top: 26px
+      margin-left: 3px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: left
+    &__item
+      width: 85vw
+      margin-bottom: 28px
+      margin-left: 6px
+    &__text
+      width: 85vw
+      height: 112px
+      padding-bottom: 57px
+    &__img
+    &__button
+      min-width: 250px
+      height: 42px
+      top: auto
+      bottom: 12px
+      right: 50%
+      transform: translateX(50%)
 
 
 

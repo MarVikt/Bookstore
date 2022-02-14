@@ -39,6 +39,18 @@ $(document).ready(function() {
     document.querySelector('[data-toggle=f06]').classList.toggle('recommended__heart-favourite');
   };
 
+// валидация форм
+$(".registration__bar").validate({
+  errorClass: "invalid",
+  messages: {
+    newsletterMail: {
+      required: "Введите адрес электронной почты",
+      email: "Адрес электронной почты должен быть в формате name@domain.com"
+    }
+  }
+});
+
+
 
 
 });  
