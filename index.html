@@ -35,7 +35,7 @@
           <li class="header__menu-item"><a href="#">Блог</a></li>
         </ul>
       </nav>
-      <button class="header__button">Получить</button>
+      <button data-toggle="modal-booking" class="header__button">Получить</button>
       <button class="menu-mobile-button">
         <span class="menu-mobile-button__line"></span>
         <span class="menu-mobile-button__line"></span>
@@ -46,7 +46,7 @@
     <nav class="menu-mobile boundaries">
       <ul class="menu-mobile__list">
         <li class="menu-mobile__item">
-          <button class="menu-mobile__proposal">Получить</button>
+          <button data-toggle="modal-booking" class="menu-mobile__proposal">Получить</button>
         </li>
         <li class="menu-mobile__item"><a href="#">Рекомендации</a></li>
         <li class="menu-mobile__item"><a href="#">Книги</a></li>
@@ -72,7 +72,7 @@
       </div>
       
       <div class="about-book__buttons">
-        <a class="about-book__buy" href="#">КУПИТЬ СЕЙЧАС</a>
+        <a data-toggle="modal-booking" class="about-book__buy" href="#">КУПИТЬ СЕЙЧАС</a>
         <a class="about-book__read" href="#">ЧИТАТЬ ДЕМО</a>
       </div>
   
@@ -940,6 +940,31 @@
  </div>
   <!-- registration -------------------------------------------------------------------- -->
 
+
+
+
+
+  <div class="modal">
+    <div class="modal__overlay">
+      <div class="modal__dialog">
+        <a class="modal__close" href="#"><img src="img/close.svg" alt="Close"></a>
+        <div class="modal__send">
+          <h3 class="modal__send-title">Обратная связь</h3>
+          <form action="send.php" class="modal__send-form" method="post">
+            <input type="text" class="modal__send-name" name="modal_send_name" placeholder="Введите ваше имя*" minlength="2"
+              required>
+            <input type="tel" class="modal__send-phone" name="modal_send_phone" placeholder="Номер телефона*" minlength="16" required>
+            <input type="email" class="modal__send-mail" name="modal_send_mail" placeholder="E-mail*" required>
+            <textarea class="modal__send-message" name="modal_send_message" cols="30" rows="6"
+              placeholder="Сообщение"></textarea>
+            <button class="modal__send-button" data-choice="booking">Отправить</button>
+            <span class="modal__send-required">* Обязательное поле</span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
