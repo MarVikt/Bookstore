@@ -47,8 +47,8 @@ $(document).ready(function() {
         slidesPerGroup: 1,
         // spaceBetween: 20
       },
-      // when window width is >= 531px
-      531: {
+      // when window width is >= 550px
+      550: {
         slidesPerView: 2,
         slidesPerGroup: 2,
         // spaceBetween: 20
