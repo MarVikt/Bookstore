@@ -16,6 +16,8 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
     rel="stylesheet">
     
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>    
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fancybox.css">
@@ -301,11 +303,11 @@
 
 
   <div class="category boundaries">
-    <div class="swiper category__content">
+    <div class="category__content">
   
-      <div class="swiper-wrapper category__wrapper">
+      <div class="category__wrapper">
   
-        <div class="swiper-slide">
+        <div class="category__slide">
           <a class="category__ref" href="#">
             <div class="category__item">
               <img class="category__img" src="img/presentation.png" alt="Бизнес & Финансы">
@@ -317,7 +319,7 @@
           </a>
         </div>
   
-        <div class="swiper-slide">
+        <div class="category__slide">
           <a class="category__ref" href="#">
             <div class="category__item">
               <img class="category__img" src="img/motivate.png" alt="Самомотиватия">
@@ -329,7 +331,7 @@
           </a>
         </div>
   
-        <div class="swiper-slide">
+        <div class="category__slide">
           <a class="category__ref" href="#">
             <div class="category__item">
               <img class="category__img" src="img/novel.png" alt="Романы Теленовеллы">
@@ -341,7 +343,7 @@
           </a>
         </div>
   
-        <div class="swiper-slide">
+        <div class="category__slide">
           <a class="category__ref" href="#">
             <div class="category__item">
               <img class="category__img" src="img/skill.png" alt="Навыки будущего">
@@ -353,7 +355,7 @@
           </a>
         </div>
   
-        <div class="swiper-slide">
+        <div class="category__slide">
           <a class="category__ref" href="#">
             <div class="category__item">
               <img class="category__img" src="img/skill.png" alt="Навыки будущего">
@@ -365,7 +367,7 @@
           </a>
         </div>
   
-        <div class="swiper-slide">
+        <div class="category__slide">
           <a class="category__ref" href="#">
             <div class="category__item">
               <img class="category__img" src="img/skill.png" alt="Навыки будущего">
@@ -378,11 +380,24 @@
         </div>
   
       </div>
+
+
+     <div class="category__buttons">
+       <!-- перенесла кнопки в slider.js -->
+      <!-- <button class="category__button category__button--previous">
+        <img class="category__arrow-left" src="img/category-arrow.svg" alt="Предыдущая категория">
+      </button>
+      <button class="category__button category__button--next">
+        <img class="category__arrow-right" src="img/category-arrow.svg" alt="Следующая категория">
+      </button> -->
+    </div>
   
     </div>
   
+
+
     <!-- If we need navigation buttons -->
-    <div class="category__buttons">
+<!--     <div class="category__buttons">
       <button class="category__button category__button--previous">
         <img class="category__arrow-left" src="img/category-arrow.svg" alt="Предыдущая категория">
       </button>
@@ -390,7 +405,7 @@
         <img class="category__arrow-right" src="img/category-arrow.svg" alt="Следующая категория">
       </button>
     </div>
-  
+ -->  
   </div>
   <!-- category -->
 
@@ -1072,6 +1087,7 @@
   <!-- /.modal -->
 
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>

@@ -1,40 +1,76 @@
 $(document).ready(function() {
 
-  var categorySlider = new Swiper('.category__content', {
-    // Optional parameters
-    direction: 'horizontal',
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    // loop: true,
-    // Responsive breakpoints
-    breakpoints: {
-      // when window width is >= 641px
-      641: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        // spaceBetween: 20
-      },
-      // when window width is >= 861px
-      861: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        spaceBetween: 26
-      },
-    },
+  // var categorySlider = new Swiper('.category__content', {
+  //   // Optional parameters
+  //   direction: 'horizontal',
+  //   slidesPerView: 4,
+  //   // slidesPerGroup: 2,
+  //   grid: {
+  //     rows: 2,
+  //   },
+  //   fill: 'row',
+  //   rows: 2,
+  //   // loop: true,
+  //   // Responsive breakpoints
+  //   breakpoints: {
+  //     // when window width is >= 641px
+  //     641: {
+  //       slidesPerView: 3,
+  //       slidesPerGroup: 3,
+  //       // spaceBetween: 20
+  //     },
+  //     // when window width is >= 861px
+  //     861: {
+  //       slidesPerView: 4,
+  //       slidesPerGroup: 4,
+  //       spaceBetween: 26
+  //     },
+  //   },
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.category__button--next',
-      prevEl: '.category__button--previous',
-    },
+  //   // Navigation arrows
+  //   navigation: {
+  //     nextEl: '.category__button--next',
+  //     prevEl: '.category__button--previous',
+  //   },
   
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-    },
+  //   keyboard: {
+  //     enabled: true,
+  //     onlyInViewport: true,
+  //   },
     
-  });
+  // });
   
+  $('.category__wrapper').slick({
+    infinite: false, // бесконечная прокрутка слайдов
+    variableWidth: false, // отключает автоматический расчет ширины одного слайда
+    appendArrows: $('.category__buttons'),
+    prevArrow: '<button class="category__button category__button--previous"><img class="category__arrow-left" src="img/category-arrow.svg" alt="Предыдущая категория"></button>',
+    nextArrow: '<button class="category__button category__button--next"><img class="category__arrow-right" src="img/category-arrow.svg" alt="Следующая категория"></button>',
+    responsive: [{
+      breakpoint: 1960, // максимальная ширина экрана
+      settings: {
+          slidesToShow: 4, // показывать по 4 слайда
+          slidesToScroll: 4, // скроллить по 4 слайда
+          rows: 1,
+      }
+    }, {
+      breakpoint: 860,
+      settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          rows: 1,
+      }
+    }, {
+      breakpoint: 640,
+      settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          rows: 2,
+      }
+}]
+});
+
+
   var unreleasedSlider = new Swiper('.unreleased__swiper', {
     // Optional parameters
     direction: 'horizontal',
