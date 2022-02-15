@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACG,AAAD,gBAAU,AAAC,CACT,MAAM,CAAE,MAAM,CACd,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,MAAM,CAAG,AACtB,AAAD,aAAO,AAAC,CACN,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,SAAS,CAClB,MAAM,CAAE,IAAI,CACZ,UAAU,CAAE,IAAI,CAChB,aAAa,CAAE,IAAI,CAAG",
+    "sources": [
+        "../sass/sections/thanks.sass"
+    ],
+    "names": [],
+    "file": "thanks.css"
+}
