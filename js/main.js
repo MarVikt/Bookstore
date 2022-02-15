@@ -103,6 +103,7 @@ $('.modal__send-phone').mask('+0(000)000-00-00', {
 // кнопка наверх
 $(function() {
   $(window).scroll(function() {
+    
   if($(this).scrollTop() != 0) {
   $('#topButton').fadeIn();
   } else {
@@ -112,6 +113,12 @@ $(function() {
   $('#topButton').click(function() {
   $('body,html').animate({scrollTop:0},1000);
   });
-  });
+
+});
+
+
+  // $(window).width() > 992
+  
+
 
 });  
