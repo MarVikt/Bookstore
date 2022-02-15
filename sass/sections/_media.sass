@@ -203,6 +203,24 @@
       text-align: center
     &__item
       margin-right: auto
+  .footer
+    &__all
+      grid-template-rows: repeat(2, min-content)
+      grid-template-columns: repeat(4, 1fr)
+      row-gap: 30px
+    &__advertisement
+      grid-row: 2 / 3
+      grid-column: 1 / 5
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: center
+      &-text
+        flex-basis: 67%
+    &__logo
+      flex-basis: 17.6%
+
+
+
 
 // --------------------------------------------------
 @media (hover: hover) and (min-width: 992px)
@@ -293,6 +311,12 @@
           width: 100%
         &-description
           width: 100%
+.footer
+  &__advertisement
+    &-text
+      flex-basis: 70%
+  &__logo
+    flex-basis: 25%
 
 
 
@@ -452,6 +476,10 @@
   .modal__send
     margin-left: 51px
     margin-right: 51px
+  .footer
+    &__all
+      column-gap: 20px
+
 
 
 // --------------------------------------------------
