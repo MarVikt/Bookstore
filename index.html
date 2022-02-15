@@ -32,9 +32,9 @@
       <a class="header__logo" href="#"><img class="header__logo-img" src="img/Logo.svg" alt="Logo"></a>
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item"><a href="#">Рекомендации</a></li>
-          <li class="header__menu-item"><a href="#">Книги</a></li>
-          <li class="header__menu-item"><a href="#">Блог</a></li>
+          <li class="header__menu-item"><a href="#recommended">Рекомендации</a></li>
+          <li class="header__menu-item"><a href="#unreleased">Книги</a></li>
+          <li class="header__menu-item"><a href="#blog">Блог</a></li>
         </ul>
       </nav>
       <button data-toggle="modal-booking" class="header__button">Получить</button>
@@ -50,12 +50,12 @@
         <li class="menu-mobile__item">
           <button data-toggle="modal-booking" class="menu-mobile__proposal">Получить</button>
         </li>
-        <li class="menu-mobile__item"><a href="#">Рекомендации</a></li>
-        <li class="menu-mobile__item"><a href="#">Книги</a></li>
-        <li class="menu-mobile__item"><a href="#">Блог</a></li>
-        <li class="menu-mobile__item"><a href="#">Рекомендации</a></li>
-        <li class="menu-mobile__item"><a href="#">Книги</a></li>
-        <li class="menu-mobile__item"><a href="#">Блог</a></li>
+        <li class="menu-mobile__item"><a href="#recommended">Рекомендации</a></li>
+        <li class="menu-mobile__item"><a href="#unreleased">Книги</a></li>
+        <li class="menu-mobile__item"><a href="#blog">Блог</a></li>
+        <li class="menu-mobile__item"><a href="#recommended">Рекомендации</a></li>
+        <li class="menu-mobile__item"><a href="#unreleased">Книги</a></li>
+        <li class="menu-mobile__item"><a href="#blog">Блог</a></li>
       </ul>
     </nav>
   </header>
@@ -88,7 +88,7 @@
 
   <div class="other-books boundaries">
 
-    <div class="recommended">
+    <div id="recommended" class="recommended">
       <h3 class="recommended__title">Рекомендации</h3>
       <div class="recommended__content">
 
@@ -104,7 +104,7 @@
               <span class="recommended__category">Art & Design</span>
               <span class="recommended__price">$25.00</span>
               <div class="recommended__choice">
-                <button class="recommended__buy">Купить</button>
+                <button data-toggle="modal-booking" class="recommended__buy">Купить</button>
                 <div data-toggle="f01" class="recommended__heart">
                   <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -128,7 +128,7 @@
               <span class="recommended__category">Education</span>
               <span class="recommended__price">$28.00</span>
               <div class="recommended__choice">
-                <button class="recommended__buy">Купить</button>
+                <button data-toggle="modal-booking" class="recommended__buy">Купить</button>
                 <div data-toggle="f02" class="recommended__heart">
                   <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -152,7 +152,7 @@
               <span class="recommended__category">Novel</span>
               <span class="recommended__price">$19.50</span>
               <div class="recommended__choice">
-                <button class="recommended__buy">Купить</button>
+                <button data-toggle="modal-booking" class="recommended__buy">Купить</button>
                 <div data-toggle="f03" class="recommended__heart">
                   <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -176,7 +176,7 @@
               <span class="recommended__category">Novel</span>
               <span class="recommended__price">$20.00</span>
               <div class="recommended__choice">
-                <button class="recommended__buy">Купить</button>
+                <button data-toggle="modal-booking" class="recommended__buy">Купить</button>
                 <div data-toggle="f04" class="recommended__heart">
                   <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -200,7 +200,7 @@
               <span class="recommended__category">Busines</span>
               <span class="recommended__price">$23.00</span>
               <div class="recommended__choice">
-                <button class="recommended__buy">Купить</button>
+                <button data-toggle="modal-booking" class="recommended__buy">Купить</button>
                 <div data-toggle="f05" class="recommended__heart">
                   <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -224,7 +224,7 @@
               <span class="recommended__category">Motivation</span>
               <span class="recommended__price">$23.00</span>
               <div class="recommended__choice">
-                <button class="recommended__buy">Купить</button>
+                <button data-toggle="modal-booking" class="recommended__buy">Купить</button>
                 <div data-toggle="f06" class="recommended__heart">
                   <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -253,7 +253,7 @@
           <div class="best__attribute">
             <h4 class="best__name">Sprint : Solve, Test&nbsp;in&nbsp;5&nbsp;Days</h4>
             <span class="best__price">$23.00</span>
-            <button class="best__buy">Купить</button>
+            <button data-toggle="modal-booking" class="best__buy">Купить</button>
           </div>
         </div>
   
@@ -264,7 +264,7 @@
           <div class="best__attribute">
             <h4 class="best__name">Hacking&nbsp;Growth Break&nbsp;Problem</h4>
             <span class="best__price">$23.00</span>
-            <button class="best__buy">Купить</button>
+            <button data-toggle="modal-booking" class="best__buy">Купить</button>
           </div>
         </div>
   
@@ -275,7 +275,7 @@
           <div class="best__attribute">
             <h4 class="best__name">Very Nice a Novel&nbsp;by&nbsp;Mercy</h4>
             <span class="best__price">$23.00</span>
-            <button class="best__buy">Купить</button>
+            <button data-toggle="modal-booking" class="best__buy">Купить</button>
           </div>
         </div>
   
@@ -286,7 +286,7 @@
           <div class="best__attribute">
             <h4 class="best__name">Hooked : How to Build Products</h4>
             <span class="best__price">$23.00</span>
-            <button class="best__buy">Купить</button>
+            <button data-toggle="modal-booking" class="best__buy">Купить</button>
           </div>
         </div>
 
@@ -396,7 +396,7 @@
   </div>
   <!-- category -->
 
-  <div class="unreleased">
+  <div id="unreleased" class="unreleased">
     <div class="unreleased__content boundaries">
       <h3 class="unreleased__title">Неизданные&nbsp;книги</h3>
       <div class="swiper unreleased__swiper">
@@ -865,7 +865,7 @@
   </div>
   <!-- partners -->
 
-  <div class="blog">
+  <div id="blog" class="blog">
     <div class="blog__content boundaries">
   
       <div class="blog__header">
