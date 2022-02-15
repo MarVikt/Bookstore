@@ -104,16 +104,20 @@ $('.modal__send-phone').mask('+0(000)000-00-00', {
 $(function() {
   $(window).scroll(function() {
     
-  if($(this).scrollTop() != 0) {
-  $('#topButton').fadeIn();
-  } else {
-  $('#topButton').fadeOut();
+  if($(window).width() > 992) {
+    if($(this).scrollTop() != 0) {
+      $('#topButton').fadeIn();
+      } else {
+      $('#topButton').fadeOut();
+      }
   }
+    
   });
+
   $('#topButton').click(function() {
   $('body,html').animate({scrollTop:0},1000);
   });
-
+  
 });
 
 
