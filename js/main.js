@@ -117,7 +117,8 @@ $(function() {
 });
 
 
-  // $(window).width() > 992
+  // if($(window).width() > 992) {}
+
   
 
 
