@@ -2,7 +2,6 @@ $(document).ready(function() {
 
   var menuButton = document.querySelector(".menu-mobile-button");
     menuButton.addEventListener('click', function() {
-    // console.log("клик по кнопке мобильного меню");
     document.querySelector(".menu-mobile").classList.toggle('menu-mobile_visible');
   
   });
@@ -41,16 +40,12 @@ $(document).ready(function() {
 
   var closeModalButton = $(".modal__close");
   var openModalButton = $('[data-toggle=modal-booking]');
-  // var modalButton = document.querySelector("data-toggle");
-  // console.log(openModalButton);
   openModalButton.on('click', openModal);
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    // var modalBody = $("body");
     modalOverlay.addClass('modal__overlay_visible');
     modalDialog.addClass('modal__dialog_visible');
-    // modalBody.addClass('body_hidden');
     document.body.style.overflow = "hidden";
   };
 
@@ -59,10 +54,8 @@ $(document).ready(function() {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    // var modalBody = $("body");
     modalOverlay.removeClass('modal__overlay_visible');
     modalDialog.removeClass('modal__dialog_visible');
-    // modalBody.removeClass('body_hidden');
     document.body.style.overflow = "auto";
   };
 
@@ -70,10 +63,8 @@ $(document).ready(function() {
     if (event.keyCode == 27) {
       var modalOverlay = $(".modal__overlay");
       var modalDialog = $(".modal__dialog");
-      // var modalBody = $("body");
       modalOverlay.removeClass('modal__overlay_visible');
       modalDialog.removeClass('modal__dialog_visible');
-      // modalBody.removeClass('body_hidden');
       document.body.style.overflow = "auto";
     }
   });
@@ -109,6 +100,18 @@ $('.modal__send-phone').mask('+0(000)000-00-00', {
   'translation': {0: {pattern: /[0-9]/}}
 });
 
-
+// кнопка наверх
+$(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+  $('#topButton').fadeIn();
+  } else {
+  $('#topButton').fadeOut();
+  }
+  });
+  $('#topButton').click(function() {
+  $('body,html').animate({scrollTop:0},1000);
+  });
+  });
 
 });  
