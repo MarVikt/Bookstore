@@ -22,9 +22,6 @@
         width: 45.13%
       &-description
         width: 48.01%
-    
-
-
 
 // --------------------------------------------------
 @media (max-width: 1400px)
@@ -59,8 +56,6 @@
     &-item
       &-title
         font-size: 18px
-    
-
 
 // --------------------------------------------------
 @media (max-width: 1280px)
@@ -111,7 +106,6 @@
       font-size: 16px
     &__button
       min-width: 100px
- 
 
 // --------------------------------------------------
 @media (max-width: 1060px)
@@ -219,9 +213,6 @@
     &__logo
       flex-basis: 17.6%
 
-
-
-
 // --------------------------------------------------
 @media (hover: hover) and (min-width: 992px)
   a
@@ -242,7 +233,6 @@
   .footer__advertisement-ref
     &:hover
       fill: $color-text-blue
-
   
 // --------------------------------------------------
 @media (max-width: 860px)
@@ -311,14 +301,12 @@
           width: 100%
         &-description
           width: 100%
-.footer
-  &__advertisement
-    &-text
-      flex-basis: 70%
-  &__logo
-    flex-basis: 25%
-
-
+  .footer
+    &__advertisement
+      &-text
+        flex-basis: 70%
+    &__logo
+      flex-basis: 25%
 
 // --------------------------------------------------
 @media (max-width: 767px)
@@ -479,8 +467,11 @@
   .footer
     &__all
       column-gap: 20px
-
-
+    &__advertisement
+      &-text
+        flex-basis: auto
+    &__logo
+      flex-basis: auto
 
 // --------------------------------------------------
 @media (max-width: 640px)
@@ -558,9 +549,39 @@
     &__send
       margin-left: 33px
       margin-right: 33px
-      
-
-      
+  .footer
+    padding-top: 48px
+    padding-bottom: 0
+    &__content
+      padding-left: 10px
+    &__all
+      grid-template-rows: repeat(3, min-content)
+      grid-template-columns: repeat(2, 1fr)
+      row-gap: 26px
+      column-gap: 7px
+      margin-bottom: 59px
+    &__advertisement
+      grid-row: 3 / 4
+      grid-column: 1 / 3
+      margin-top: 5px
+      &-text
+        width: 95%
+        text-align: center
+        margin-left: -18px
+        margin-bottom: 14px
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 18px
+    &__item
+      margin-bottom: 13px
+    &__ref
+      font-size: 14px
+      line-height: 20px   
+    &__logo
+      margin-bottom: 10px
+    &__down
+      display: none
 
 // --------------------------------------------------
 @media (max-width: 549px)
